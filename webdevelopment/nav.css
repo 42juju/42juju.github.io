@@ -5,3 +5,12 @@ li{
     display: block;
     color: blue;
 }
+
+.flexlayout{
+    display: flex;
+    background-color: DodgerBlue;
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
