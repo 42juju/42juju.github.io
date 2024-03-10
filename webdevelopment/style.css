@@ -1,3 +1,18 @@
   h1 {
     color: blue;
   }
+  #pdf {
+    background-color: lightblue;
+    color: black;
+    border: 0;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+p:first-of-type::first-letter {
+  font-size: 2em;
+  color: rgb(82, 215, 208);
+}
+p:not(:first-of-type) {
+  text-indent: 2em; 
+}
