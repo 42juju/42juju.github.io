@@ -1,7 +1,27 @@
-  h1 {
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
     color: blue;
   }
-  #pdf {
+
+header, main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+main {
+  text-align: justify;
+}
+
+#pdf {
     background-color: lightblue;
     color: black;
     border: 0;
@@ -19,6 +39,25 @@ p:not(:first-of-type) {
 header{
   text-align: center;
 }
+section{
+  text-align: center;
+}
+.flexlayout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexlayout img {
+  max-width: 100%;
+  height: auto;
+
+}
+.rflexlayout img {
+  max-width: 50%;
+  height: auto;
+
+}
 @media screen and (max-width: 600px) {
   
   body {
@@ -29,10 +68,8 @@ header{
       font-size: 24px; 
 
   }
-header{width: 100%;}
-
-section{width: 100%;}
+  header, main {
+    width: 100%;
 }
-section{
-  text-align: center;
+section{width: 100%;}
 }
