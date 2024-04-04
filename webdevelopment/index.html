@@ -1,52 +1,62 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Home page</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="nav.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    </head>
-    <body>
-        <!--
-              This page has been updated to better represent the wireframe and be user friendly march 23rd
-    -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <!-- Mobile Navigation -->
+    <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+    </label>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <nav class="nav" id="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="references.html">Reference</a></li>
+            <li><a href="#">Contact</a></li>
+            <li class="dropdown">
+                <a href="#">Learn something <i class="material-icons">arrow_drop_down</i></a>
+                <ul class="dropdown-content">
+                    <li><a href="learn.html">How to calm yourself</a></li>
+                    <li><a href="learn.html">How to squat</a></li>
+                    <li><a href="learn.html">How to code</a></li>
+                    <li><a href="learn.html">How to train </a></li>
 
-        <h2>Welcome Home </h2>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 
-        <div class="dropdown">
-            <button class="dropbtn">Change Pages</button>
-            <div class="dropdown-content">
-              <nav>
-              <li>
-                  <a href="index.html">Home</a> |
-                  <a href="about.html">About</a> |
-                  <a href="learn.html">Learn something</a>
-                  <a href="references.html">Reference</a> |
-                  <a href="#contact.html">Contact</a> | 
-                  </li>
-              </nav>
-            </div>
-          </div>
-<label for="nav-toggle" class="nav-toggle-label">
-    <span></span>
-</label>
-
-
-        <header>
-       <h1>Welcome to the zone of balance. Hope you leave this website in a clear head space </h1>
-   <div class="flexlayout">
-   <img src="homePhoto.jpg" alt="Relaxing mountain photo">
-   </div>       <br>
-       <p>The purpose or goal of this website is to provide the user a sense of relief from their busy lives with sports and school work.  
-        My goal is to create a database that has videos, examples, and motivation to help aid you in balancing school, social life, and athletics. 
-        Is my website catered to student athletes such as myself? Yes, and no. I believe that everyone can benefit from mental wellness and having 
-        a place where they can get examples for their studies. Let me go over the layout. There will be a page for wisdom from credited authors as 
-        well as a forum for people to add their own. A page for video references. Such as a form for baseball swings, or a workout that could benefit you.  And on the last page you will be able to see references for code. There could be useful links etc. A truely one stop shop.  </p>
+    <header id="home">
+        <h1>Welcome to the zone of balance. Hope you leave this website in a clear head space </h1>
+        <div class="flexlayout">
+            <img src="homePhoto.png" alt="Relaxing mountain photo">
+        </div>
+        <br>
+        <p>The purpose or goal of this website is to provide the user a sense of relief from their busy lives with sports and school work.
+            My goal is to create a database that has videos, examples, and motivation to help aid you in balancing school, social life, and athletics.
+            Is my website catered to student athletes such as myself? Yes, and no. I believe that everyone can benefit from mental wellness and having
+            a place where they can get examples for their studies. Let me go over the layout. There will be a page for wisdom from credited authors as
+            well as a forum for people to add their own. A page for video references. Such as a form for baseball swings, or a workout that could benefit you. And on the last page you will be able to see references for code. There could be useful links etc. A truely one stop shop. </p>
     </header>
-     </body>
+
+    <section id="about">
+    </section>
+
+    <section id="reference">
+    </section>
+
+    <section id="contact">
+    </section>
+
+</body>
 </html>
+
