@@ -13,6 +13,7 @@ ul {
     padding: 0;
     margin: 0;
     display: flex;
+    flex-direction: column; 
 }
 
 li {
@@ -33,23 +34,16 @@ li {
     font-size: 30px;
 }
 
-.dropbtn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-}
-
+/* Dropdown Navigation */
 .dropdown {
-    position: relative;
+    position: center; 
     display: inline-block;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: #0d0c0c;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -63,7 +57,7 @@ li {
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: #121111;
 }
 
 .dropdown:hover .dropdown-content {
@@ -74,12 +68,106 @@ li {
     background-color: #3e8e41;
 }
 
-@media only screen and (max-width: 959px) {
-    .dropdown-content {
-        min-width: 100%;
+/* Mobile Navigation */
+.nav-toggle-label {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background-color: #333;
+    height: 3px;
+    width: 30px;
+    border-radius: 3px;
+    position: absolute;
+    transition: transform 0.3s ease;
+}
+
+.nav-toggle-label span::before {
+    content: '';
+    top: -8px;
+}
+
+.nav-toggle-label span::after {
+    content: '';
+    top: 8px;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    width: 20px;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+#nav-toggle:checked + .nav {
+    display: block;
+}
+
+.nav {
+    display: none;
+    position: center;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    padding-top: 0px; 
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.nav ul li {
+    padding: 20px;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 900px) {
+    /* vertical nav for Desktop View */
+    .nav-toggle-label {
+        display: none;
     }
 
-    .dropdown-content a {
-        padding: 8px 16px;
+    .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+        height: 60px;
+    }
+
+    .nav ul {
+        flex-direction: row;
+    }
+
+    .nav ul li {
+        padding: 0 10px;
+        border-right: 1px solid #555;
+    }
+
+    .nav ul li:last-child {
+        border-right: none;
     }
 }
+
