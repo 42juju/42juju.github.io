@@ -6,6 +6,7 @@ body {
 
 h1 {
     color: blue;
+    padding-top: 50px;
   }
 
 header, main {
@@ -15,7 +16,7 @@ header, main {
 
 header {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 main {
   text-align: justify;
@@ -58,7 +59,7 @@ section{
   height: auto;
 
 }
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
   
   body {
       font-size: 14px; 
@@ -73,3 +74,4 @@ section{
 }
 section{width: 100%;}
 }
+
