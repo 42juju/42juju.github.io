@@ -8,6 +8,11 @@ h1 {
     color: blue;
     padding-top: 50px;
   }
+#Fonttest{
+  width: 100%;
+  max-width: 960px;
+  color: antiquewhite;
+}
 
 header, main {
     width: 90%;
@@ -17,6 +22,8 @@ header, main {
 header {
     text-align: center;
     margin-bottom: 30px;
+    font-family: "Trirong", serif;
+
 }
 main {
   text-align: justify;
@@ -74,4 +81,16 @@ section{
 }
 section{width: 100%;}
 }
+/* Print Style sheet*/
+@media print {
+  *{
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  .nav, a{
+    display: none;
+  }
 
+}
