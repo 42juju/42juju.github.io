@@ -3,7 +3,19 @@ body {
   margin: 0;
   padding: 0;
 }
+/*footer*/
+.box{
+  width: 960px;
+  height:250px;
+  padding:20px;
+  margin: 100px auto;
+  box-shadow: 10px rgb(57, 208, 238) ;
+  border: 10px black;
 
+  background-image: url(footer.png);
+  background-size: cover;
+
+}
 h1 {
     color: blue;
     padding-top: 50px;
