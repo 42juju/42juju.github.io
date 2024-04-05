@@ -88,8 +88,11 @@ section{width: 100%;}
     color: #000 !important;
     box-shadow: none !important;
     text-shadow: none !important;
+    margin: 0;
+    padding: 0;
+    width: 100%;
   }
-  .nav, a{
+  .nav, a, img{
     display: none;
   }
 
