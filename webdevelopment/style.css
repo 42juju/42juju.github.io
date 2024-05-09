@@ -79,17 +79,20 @@ section{
   display: flex;
   justify-content: center;
   align-items: center; 
+  
 }
 
 .flexlayout img {
   max-width: 100%;
   height: auto;
-
+  width: 500px;
+  height: 400px;
 }
 .rflexlayout img {
   max-width: 50%;
   height: auto;
-
+  width: 500px;
+  height: 400px;
 }
 @media screen and (min-width: 600px) {
   
@@ -168,4 +171,7 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #f2f2f2; /* Add a background color to every other row */
+}
+img{
+  size: 5px;
 }
